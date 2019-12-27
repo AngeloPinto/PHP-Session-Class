@@ -12,8 +12,8 @@
 
 class Session {
 
-    private $session_name  =  'CENTRAL_ONLINE';  // Name of Session
-    private $life_time     =  1;                 // Minutes to expirate
+    private $session_name  =  'PROJECT';    // Name of Session
+    private $life_time     =  1;            // Minutes to expirate
     private $url_timeout   =  'sair.php';
     private $domain        =  'localhost';
     private $show_echo     =  true;
@@ -43,6 +43,7 @@ class Session {
     public function is_valid(){
         return $this->session_validate();
     }   
+    
     public function destroy(){
         
         session_unset();
