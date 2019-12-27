@@ -1,6 +1,6 @@
 <?php 
 
-    require_once ("./libs/ClassSession.php");
+    require_once ("./src/ClassSession.php");
 
     $session = new Session();
     $session->destroy();
